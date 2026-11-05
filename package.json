@@ -1,0 +1,37 @@
+{
+  "name": "dsh-trustquant",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness plugin: TrustQuant financial tools — oracle-pinned option pricing, portfolio optimization/risk/stress, and EUR rates — with calculation manifests and replay for audit. Every number an agent quotes is reproducible.",
+  "type": "module",
+  "private": false,
+  "bin": {
+    "trustquant-dsh": "bin/trustquant-dsh.js"
+  },
+  "files": [
+    "bin/",
+    "skills/",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": "^20.19.0 || >=22.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "manifestVersion": 1
+  },
+  "license": "Apache-2.0",
+  "author": "vicfei",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vicfei/dsh-trustquant.git"
+  },
+  "homepage": "https://github.com/vicfei/dsh-trustquant#readme",
+  "bugs": {
+    "url": "https://github.com/vicfei/dsh-trustquant/issues"
+  }
+}

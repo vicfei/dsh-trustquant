@@ -1,0 +1,12 @@
+# dsh-trustquant bundle layer.
+#
+# Deliberately inserts no plugin entry: this bundle is a distribution vehicle —
+# a skill (skills/dsh-trustquant/SKILL.md, discovered by @deepseek-ai/dsh-skill-filesystem
+# from ~/.dsh/skills/ or <project>/.dsh/skills/) and a CLI passthrough
+# (`trustquant-dsh`, npm bin, resolving the Rust `trustquant` binary).
+#
+# Install:
+#   npm i -g vicfei/dsh-trustquant                             # puts trustquant-dsh on PATH
+#   ln -s <repo>/skills/dsh-trustquant ~/.dsh/skills/dsh-trustquant   # registers the skill
+#   trustquant-dsh doctor                                      # verify the binary chain
+[]
